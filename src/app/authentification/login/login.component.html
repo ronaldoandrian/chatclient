@@ -4,7 +4,8 @@
     <mat-card-header>
       <mat-card-title>Se connecter</mat-card-title>
     </mat-card-header>
-
+    <p></p>
+    <p></p>
     <form class="example-form">
       <mat-card-content>
         <mat-form-field class="example-full-width">
@@ -17,7 +18,10 @@
       </mat-card-content>
       <button mat-stroked-button color="accent" class="btn-block">Se connecter</button>
       <p>Vous n'avez pas encore un compte? <a href="/register">S'inscrire</a></p>
+      <div style="width: 50px; height: 50px;">
+        <mat-spinner></mat-spinner>
+      </div>
     </form>
   </mat-card>
-
+  <div class="align-middle"><div class="lv-circles tiny lvl-5" data-label="Loading..."></div></div>
 </div>
