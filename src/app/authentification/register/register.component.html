@@ -1,27 +1,30 @@
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
     <mat-card class="box">
       <mat-card-header>
-        <mat-card-title>Register</mat-card-title>
+        <mat-card-title>S'inscrire</mat-card-title>
       </mat-card-header>
   
       <form class="example-form">
   
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Username">
+            <input matInput placeholder="Nom d'utilisateur">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Email">
+            <input matInput placeholder="Adresse mail">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Password">
+            <input type="password" matInput placeholder="Mot de passe">
           </mat-form-field>
-  
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput placeholder="Confirmer votre mot de passe">
+          </mat-form-field>
         </mat-card-content>
   
-        <button mat-stroked-button color="accent" class="btn-block">Register</button>
+        <button mat-stroked-button color="accent" class="btn-block">S'inscrire</button>
+        <p>Vous avez déjà un compte? <a href="/login">Se connecter</a></p>
   
       </form>
     </mat-card>
