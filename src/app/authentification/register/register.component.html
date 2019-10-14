@@ -3,28 +3,29 @@
       <mat-card-header>
         <mat-card-title>S'inscrire</mat-card-title>
       </mat-card-header>
-    <p></p>      
-      <form class="example-form">
+    <p></p>  
+    <div class="error_message" id="error_div"><p>{{error_login}}</p></div>    
+      <form class="example-form" [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)">
   
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Nom d'utilisateur">
+            <input formControlName="username" matInput placeholder="Nom d'utilisateur">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Adresse mail">
+            <input formControlName="mail" matInput placeholder="Adresse mail">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input type="password" matInput placeholder="Mot de passe">
+            <input formControlName="password" type="password" matInput placeholder="Mot de passe">
           </mat-form-field>
           <mat-form-field class="example-full-width">
-            <input type="password" matInput placeholder="Confirmer votre mot de passe">
+            <input formControlName="confirm_password" type="password" matInput placeholder="Confirmer votre mot de passe">
           </mat-form-field>
         </mat-card-content>
   
-        <button mat-stroked-button color="accent" class="btn-block">S'inscrire</button>
-        <p>Vous avez déjà un compte? <a href="/login">Se connecter</a></p>
+        <button type="submit" mat-stroked-button color="accent" class="btn-block">S'inscrire</button>
+        <p class="switch_log_sign">Vous avez déjà un compte? <a href="/login">Se connecter</a></p>
   
       </form>
     </mat-card>

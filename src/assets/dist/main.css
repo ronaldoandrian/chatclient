@@ -407,7 +407,7 @@
 
 /* CIRCLES */
 .lv-circles[data-label]:after {
-  color: #138D75;
+  color: #ffffff;
 }
 .lv-circles div {
   width: 100%;
@@ -420,7 +420,7 @@
   width: 15%;
   height: 15%;
   border-radius: 50%;
-  background-color: #138D75;
+  background-color: #ffffff;
   animation: lv-dots_fading_animation 1.2s infinite ease-in-out both;
 }
 .lv-circles div:nth-child(2) {
@@ -492,7 +492,8 @@
 
 /* SQUARES */
 .lv-squares[data-label]:after {
-  color: #0B5345;
+  color: #ffffff;
+  font-size: 20px;
 }
 .lv-squares div {
   width: 40%;
