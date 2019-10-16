@@ -1,7 +1,7 @@
 html,body{height:100%;margin:0;padding:0;}
 body{background-image:url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);background-position:center;background-size:cover;background-repeat:no-repeat;min-height:100vh;font-family:'Roboto', sans-serif;}
 .app-header{justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:2;box-shadow:0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);}
-.login-wrapper{height:100%;}
+.login-wrapper{height:90%;}
 .positronx{text-decoration:none;color:#ffffff;}
 .box{position:relative;top:0;opacity:1;float:left;padding:5px;width:100%;background:#fff;border-radius:10px;transform:scale(1);-webkit-transform:scale(1);-ms-transform:scale(1);z-index:5;max-width:380px;}
 .box.back{transform:scale(.95);-webkit-transform:scale(.95);-ms-transform:scale(.95);top:-20px;opacity:.8;z-index:-1;}
@@ -17,16 +17,4 @@ body{background-image:url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyA
 .switch_log_sign {margin-top: 15px;}
 .error_message {  margin-bottom: 15px; color: red; text-align: center; padding: 10px; background-color: #f6e0e0; border-radius: 5px; border: 1px solid red;}
 .error_message p {margin: 0;}
-#loader {
-    position: absolute;
-    top: 0;
-    bottom: 0%;
-    left: 0;
-    right: 0%;
-    background-color: #4e48487a;
-    z-index: 99;
-    display: none;
-    text-align: center;
-    width: 100%;
-    padding-top: 335px;
-}
+#loader { position: absolute; top: 0; bottom: 0%; left: 0; right: 0%; background-color: #4e48487a; z-index: 99; text-align: center; width: 100%; padding-top: 335px; }

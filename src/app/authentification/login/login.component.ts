@@ -26,7 +26,9 @@ export class LoginComponent implements OnInit {
       var error_div = document.getElementById('error_div');
       if(error_div) error_div.setAttribute("style", "display: none;");
       this.error_login = "";
-      this.loginForm.reset();
+      var loader = document.getElementById('loader');
+      if(loader) loader.setAttribute("style", "display: block;");
+      
     }
   }
   ngOnInit() { 
